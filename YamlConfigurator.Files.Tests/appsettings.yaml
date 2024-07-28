@@ -1,0 +1,16 @@
+fileManager:
+  folder: .\
+  timestamp: false
+  force: true
+  append: false
+  files:
+    - name: results
+      type: excel
+      root: TabulatedResults
+      extension: xlsx
+    - name: journal
+      type: word
+      root: OngoingWorkJournal
+      extension: docx
+      force: false
+      append: true
