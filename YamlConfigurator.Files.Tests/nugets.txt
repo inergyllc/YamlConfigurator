@@ -1,0 +1,8 @@
+PACKAGES
+----------
+Microsoft.Extensions.Logging --prerelease
+Microsoft.Extensions.Logging.Configuration --prerelease
+
+REFERENCES
+----------
+..\YamlConfigurator.Files\YamlConfigurator.Files.csproj

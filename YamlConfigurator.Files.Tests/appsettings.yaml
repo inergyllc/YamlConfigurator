@@ -1,6 +1,6 @@
 fileManager:
   folder: .\
-  timestamp: false
+  timestamp: true
   force: true
   append: false
   files:

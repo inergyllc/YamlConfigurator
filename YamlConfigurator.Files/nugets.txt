@@ -1,0 +1,9 @@
+PACKAGES
+----------
+Microsoft.Extensions.Configuration --prerelease
+Microsoft.Extensions.Configuration.FileExtensions --prerelease
+Microsoft.Extensions.Configuration.Json --prerelease
+Microsoft.Extensions.Configuration.Yaml --prerelease
+Microsoft.Extensions.DependencyInjection --prerelease
+Microsoft.Extensions.Configuration.Binder --prerelease
+
