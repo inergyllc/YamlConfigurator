@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using YamlConfigurator.Files;
 
-namespace YamlConfigurator.Files;
+namespace YamlConfigurator.Files.Models;
 
 /// <summary>
 /// Represents the configuration for the file manager.

@@ -1,21 +1,29 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>YamlConfigurator.Files</id>
     <version>1.0.0</version>
+    <title>YamlConfigurator.Files</title>
     <authors>Amram E. Dworkin</authors>
     <owners>Inergy LLC</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>A library to facilitate file management using YAML configuration files.</description>
+    <license type="file">LICENSE</license>
+    <iconUrl>https://raw.githubusercontent.com/inergyllc/YamlConfigurator/main/icon.png</iconUrl>
+    <projectUrl>https://github.com/inergyllc/YamlConfigurator</projectUrl>
+    <repository type="git" url="https://github.com/inergyllc/YamlConfigurator.git" />
+    <description>C# configuration manager for Files in YAML.  Part of the YAML configuration collection</description>
     <releaseNotes>Initial release.</releaseNotes>
-    <tags>yaml configuration file-management</tags>
+    <copyright>Copyright Ingery LLC, 2024</copyright>
+    <tags>yaml configurator files dependency inspection</tags>
     <dependencies>
       <dependency id="Microsoft.Extensions.Configuration" version="9.0.0-preview.6.24327.7" />
-      <dependency id="Microsoft.Extensions.Configuration.FileExtensions" version="9.0.0-preview.6.24327.7" />
-      <dependency id="Microsoft.Extensions.Configuration.Json" version="9.0.0-preview.6.24327.7" />
-      <dependency id="Microsoft.Extensions.Configuration.Yaml" version="2.0.0-preview2" />
-      <dependency id="Microsoft.Extensions.DependencyInjection" version="9.0.0-preview.6.24327.7" />
       <dependency id="Microsoft.Extensions.Configuration.Binder" version="9.0.0-preview.6.24327.7" />
     </dependencies>
+    <readme>README.md</readme>
   </metadata>
+  <files>
+    <file src="bin\Release\net8.0\YamlConfigurator.Files.dll" target="lib\net8.0\" />
+    <file src="LICENSE" target="" />
+    <file src="README.md" target="" />
+  </files>
 </package>

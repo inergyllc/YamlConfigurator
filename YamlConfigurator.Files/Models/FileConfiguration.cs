@@ -1,4 +1,4 @@
-﻿namespace YamlConfigurator.Files;
+﻿namespace YamlConfigurator.Files.Models;
 
 /// <summary>
 /// Represents the configuration for a file.
@@ -51,7 +51,7 @@ public class FileConfiguration
     /// </summary>
     public string Extension
     {
-        get => string.IsNullOrWhiteSpace(_extension) ? string.Empty : (_extension[0] == '.' ? _extension : "." + _extension);
+        get => string.IsNullOrWhiteSpace(_extension) ? string.Empty : _extension[0] == '.' ? _extension : "." + _extension;
         set => _extension = value?.Trim() ?? string.Empty;
     }
 
