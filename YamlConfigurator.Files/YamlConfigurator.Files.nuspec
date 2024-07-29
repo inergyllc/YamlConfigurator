@@ -7,11 +7,11 @@
     <authors>Amram E. Dworkin</authors>
     <owners>Inergy LLC</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <license type="file">LICENSE</license>
+    <license type="expression">MIT</license>
     <iconUrl>https://raw.githubusercontent.com/inergyllc/YamlConfigurator/main/icon.png</iconUrl>
     <projectUrl>https://github.com/inergyllc/YamlConfigurator</projectUrl>
     <repository type="git" url="https://github.com/inergyllc/YamlConfigurator.git" />
-    <description>C# configuration manager for Files in YAML.  Part of the YAML configuration collection</description>
+    <description>C# configuration manager for Files in YAML. Part of the YAML configuration collection</description>
     <releaseNotes>Initial release.</releaseNotes>
     <copyright>Copyright Ingery LLC, 2024</copyright>
     <tags>yaml configurator files dependency inspection</tags>
@@ -23,7 +23,6 @@
   </metadata>
   <files>
     <file src="bin\Release\net8.0\YamlConfigurator.Files.dll" target="lib\net8.0\" />
-    <file src="LICENSE" target="" />
     <file src="README.md" target="" />
   </files>
 </package>
