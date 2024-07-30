@@ -1,8 +1,10 @@
 PACKAGES
 ----------
+Microsoft.Extensions.Configuration.FileExtensions --prerelease
+Microsoft.Extensions.Configuration.Yaml --prerelease
+Microsoft.Extensions.Configuration.Json --prerelease
+Microsoft.Extensions.DependencyInjection --prerelease
 Microsoft.Extensions.Logging --prerelease
-Microsoft.Extensions.Logging.Configuration --prerelease
+Microsoft.Extensions.Logging.Console --prerelease
 
-REFERENCES
-----------
-..\YamlConfigurator.Files\YamlConfigurator.Files.csproj
+YamlConfigurator.Files
