@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>com.inergyllc.yamlconfigurator.files</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>YamlConfigurator.Files</title>
     <authors>Amram E. Dworkin</authors>
     <owners>Inergy LLC</owners>
