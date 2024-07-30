@@ -7,3 +7,7 @@ Microsoft.Extensions.Configuration.Yaml --prerelease
 Microsoft.Extensions.DependencyInjection --prerelease
 Microsoft.Extensions.Configuration.Binder --prerelease
 
+this should be packaged as
+
+YamlConfigurator.Files
+
