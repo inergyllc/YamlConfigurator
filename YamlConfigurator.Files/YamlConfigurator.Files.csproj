@@ -17,6 +17,8 @@
     <PackageReleaseNotes>First release.</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Configurations>Debug;Release;Pack</Configurations>
+    <Version>1.0.1</Version>
+    <!-- Add this line to specify the version -->
   </PropertyGroup>
 
   <ItemGroup>
@@ -46,6 +48,5 @@
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
-
 
 </Project>
