@@ -20,13 +20,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
 
-    - name: Increment version
-      id: increment_version
-      run: |
-        VERSION_REGEX="s/<Version>[0-9]*\.[0-9]*\.[0-9]*<\/Version>/<Version>${{ github.run_number }}.<Minor>.<Patch><\/Version>/"
-        sed -i -E "$VERSION_REGEX" YamlConfigurator.Files/YamlConfigurator.Files.csproj
-        cat YamlConfigurator.Files/YamlConfigurator.Files.csproj
-
     - name: Build
       run: dotnet build --configuration Release --no-restore
 
@@ -35,4 +28,3 @@ jobs:
 
     - name: Publish to GitHub Packages
       run: dotnet nuget push ./nupkg/*.nupkg --source "https://nuget.pkg.github.com/inergyllc/index.json" --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
-      
