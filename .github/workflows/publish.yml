@@ -10,22 +10,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '8.0.x'
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '8.0.x'
 
-      - name: Restore dependencies
-        run: dotnet restore
+    - name: Restore dependencies
+      run: dotnet restore
 
-      - name: Build
-        run: dotnet build --configuration Release
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
 
-      - name: Pack
-        run: dotnet pack --configuration Release --output ./artifacts
+    - name: Pack
+      run: dotnet pack --configuration Release --no-build --output ./nupkg
 
-      - name: Publish to GitHub Packages
-        run: dotnet nuget push ./artifacts/*.nupkg --api-key ${{ secrets.GH_NUGET_API_KEY }} --source "https://nuget.pkg.github.com/inergyllc/index.json"
+    - name: Publish to GitHub Packages
+      run: dotnet nuget push ./nupkg/*.nupkg --source "github"
+      env:
+        NUGET_AUTH_TOKEN: ${{ secrets.GH_NUGET_API_KEY }}
+
+    # Uncomment the following section to publish to nuget.org
+    # - name: Publish to nuget.org
+    #   run: dotnet nuget push ./nupkg/*.nupkg --source "https://api.nuget.org/v3/index.json"
+    #   env:
+    #     NUGET_AUTH_TOKEN: ${{ secrets.NUGET_API_KEY }}
