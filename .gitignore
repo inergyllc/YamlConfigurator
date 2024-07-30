@@ -399,4 +399,4 @@ FodyWeavers.xsd
 
 # Nuget making stuff
 **/nugetize.ps1
-
+YamlConfigurator.Files/nugetize.ps1
