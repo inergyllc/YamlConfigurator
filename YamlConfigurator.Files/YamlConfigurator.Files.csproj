@@ -17,7 +17,7 @@
     <PackageReleaseNotes>First release.</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Configurations>Debug;Release;Pack</Configurations>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <!-- Add this line to specify the version -->
   </PropertyGroup>
 
