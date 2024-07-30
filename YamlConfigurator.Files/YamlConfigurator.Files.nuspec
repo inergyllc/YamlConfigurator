@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>YamlConfigurator.Files</id>
+    <id>com.inergyllc.yamlconfigurator.files</id>
     <version>1.0.0</version>
     <title>YamlConfigurator.Files</title>
     <authors>Amram E. Dworkin</authors>

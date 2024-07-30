@@ -4,10 +4,30 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Configuration Extensions for YAML Files / File Types</Title>
+    <Description>C# configuration manager for Files in YAML. Part of the YAML configuration collection</Description>
+    <Copyright>Inergy LLC, 2024</Copyright>
+    <PackageProjectUrl>https://github.com/inergyllc/YamlConfigurator/tree/master/YamlConfigurator.Files</PackageProjectUrl>
+    <PackageIcon>yaml-icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/inergyllc/YamlConfigurator</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>yaml;c#;configuration extension;configuration;files manager;</PackageTags>
+    <PackageReleaseNotes>First release.</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Configurations>Debug;Release;Pack</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="ConfigurationHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Nugets\yaml-icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -16,8 +36,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="README.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
