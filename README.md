@@ -19,25 +19,6 @@ The `YamlConfigurator.Files` package is publicly available and can be added to y
 
 1. **Add the Package to Your Project:**
 
-   - Open Visual Studio.
-   - Right-click on your project in the Solution Explorer.
-   - Select `Manage NuGet Packages...`.
-   - Click on the `Settings` icon (gear icon) to open the Package Manager Settings.
-   - Add a new package source by clicking the `+` button.
-     - Name: `YamlConfigurator.Files`
-     - Source: `https://github.com/inergyllc/YamlConfigurator/raw/master/Nugets/YamlConfigurator.Files.1.0.0.nupkg`
-   - Click `OK` to save the new package source.
-   - Now, you can browse or search for `YamlConfigurator.Files` in the NuGet Package Manager and install it.
-
 ## Using `dotnet` CLI
 
 1. **Add the Package to Your Project:**
-
-   - Open a command prompt or terminal.
-   - Navigate to the directory where your project file (`.csproj`) is located.
-   - Run the following command to add the package:
-
-     ```sh
-     dotnet nuget add source -n YamlConfiguratorFiles "https://github.com/inergyllc/YamlConfigurator/raw/master/Nugets/YamlConfigurator.Files.1.0.0.nupkg"
-     dotnet add package YamlConfigurator.Files --source YamlConfiguratorFiles
-     ```
