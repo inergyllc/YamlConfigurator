@@ -23,8 +23,8 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
 
-    - name: Pack
-      run: dotnet pack --configuration Release --no-build --output ./nupkg
+    - name: Pack YamlConfigurator.Files
+      run: dotnet pack YamlConfigurator.Files/YamlConfigurator.Files.csproj --configuration Release --no-build --output ./nupkg
 
     - name: Publish to GitHub Packages
-      run: dotnet nuget push ./nupkg/*.nupkg --source "https://nuget.pkg.github.com/inergyllc/index.json" --api-key ${{ secrets.GH_NUGET_API_KEY }} --skip-duplicate
+      run: dotnet nuget push ./nupkg/YamlConfigurator.Files.*.nupkg --source "https://nuget.pkg.github.com/inergyllc/index.json" --api-key ${{ secrets.GH_NUGET_API_KEY }} --skip-duplicate
