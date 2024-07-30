@@ -63,7 +63,7 @@ YamlConfigurator.Files is a .NET library that facilitates the loading and usage 
 1. Click on your profile picture in the top-right corner.
 2. Select `Settings` from the dropdown menu.
 
-![Step 2](path/to/image10.png)
+![Step 2](https://github.com/inergyllc/YamlConfigurator/blob/master/Resources/github%20PAT%201.png)
 
 ### Step 3: Navigate to Developer Settings
 1. In the left sidebar, scroll down and click on `Developer settings`.
@@ -73,7 +73,7 @@ YamlConfigurator.Files is a .NET library that facilitates the loading and usage 
 2. Click on `Tokens (classic)`.
 3. Click the `Generate new token (classic)` button.
 
-![Step 4](path/to/image13.png)
+![Step 4](https://github.com/inergyllc/YamlConfigurator/blob/master/Resources/github%20PAT%202.png)
 
 ### Step 5: Configure the Token
 1. Enter a note to describe the token.
@@ -82,6 +82,7 @@ YamlConfigurator.Files is a .NET library that facilitates the loading and usage 
 - `read:pacakges`
 - `write:packages`
 - `delete:packages`
+
 **You will probably have to go through 2 step authentication here**
 
 #### Step 7: Generate the Token
@@ -89,5 +90,6 @@ YamlConfigurator.Files is a .NET library that facilitates the loading and usage 
 
 #### Step 8: Copy the Token
 1. Copy the generated token and save it securely.
-**As usual.  The token will not be retrievable after this.  Remember it**
+
+**As expected.  The token will not be irretrievable after this.  Remember it**
 
