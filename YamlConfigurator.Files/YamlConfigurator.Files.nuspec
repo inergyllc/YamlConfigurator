@@ -14,7 +14,7 @@
     <description>C# configuration manager for Files in YAML. Part of the YAML configuration collection</description>
     <releaseNotes>Initial release.</releaseNotes>
     <copyright>Copyright Ingery LLC, 2024</copyright>
-    <tags>yaml configurator files dependency inspection</tags>
+    <tags>yaml configurator files dependency inspection c#</tags>
     <dependencies>
       <dependency id="Microsoft.Extensions.Configuration" version="9.0.0-preview.6.24327.7" />
       <dependency id="Microsoft.Extensions.Configuration.Binder" version="9.0.0-preview.6.24327.7" />
