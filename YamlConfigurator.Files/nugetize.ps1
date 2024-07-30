@@ -1,1 +1,0 @@
-nuget.exe pack YamlConfigurator.Files.nuspec -OutputDirectory ..\Nugets
