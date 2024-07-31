@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>com.inergyllc.yamlconfigurator.docx</id>
+    <version>0.0.1</version>
+    <title>YamlConfigurator.Files</title>
+    <authors>Amram E. Dworkin</authors>
+    <owners>Inergy LLC</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <iconUrl>https://raw.githubusercontent.com/inergyllc/YamlConfigurator/main/icon.png</iconUrl>
+    <projectUrl>https://github.com/inergyllc/YamlConfigurator</projectUrl>
+    <repository type="git" url="https://github.com/inergyllc/YamlConfigurator.git" />
+    <description>C# configuration manager for DOCX in YAML. Part of the YAML configuration collection</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright Ingery LLC, 2024</copyright>
+    <tags>yaml configurator docx dependency injection c#</tags>
+    <dependencies>
+      <dependency id="Microsoft.Extensions.Configuration" version="9.0.0-preview.6.24327.7" />
+      <dependency id="Microsoft.Extensions.Configuration.Binder" version="9.0.0-preview.6.24327.7" />
+    </dependencies>
+    <readme>README.md</readme>
+  </metadata>
+  <files>
+    <file src="bin\Release\net8.0\YamlConfigurator.Docx.dll" target="lib\net8.0\" />
+    <file src="README.md" target="" />
+  </files>
+</package>
