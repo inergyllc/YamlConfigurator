@@ -1,0 +1,63 @@
+fileManager:
+  folder: .\
+  timestamp: true
+  force: true
+  append: false
+  files:
+    - name: results
+      type: excel
+      root: TabulatedResults
+      extension: xlsx
+    - name: journal
+      type: word
+      root: OngoingWorkJournal
+      extension: docx
+      force: false
+      append: true
+
+docx:
+  docs:
+    - name: journal
+      fileid: journal
+      titlepage:
+        title:
+          value: LLM Comparison Journal
+          style: Title
+      parts:
+        - name: summary
+          title: 
+            value: Summary
+            style: Heading 2
+          text: 
+            value: Summarize this LlmComparison run
+            style: Normal
+        - name: qtable
+          title: 
+            value: Q-Table - Questions for LLMs
+            style: Heading 2
+          text: 
+            value: |
+              Q-Tables generate formatted questions that posed to various language models. 
+              By structuring the questions in this way, we systematically query the models 
+              and analyze their responses based on specific topics and subtopics.
+              Cat/SubCat ensures a thorough and organized evaluation of AI capabilities.
+            style: Normal
+
+# Values to test
+stringvalue: teststring
+intvalue: 99
+boolvalue: false
+doublevalue: 122.03
+datevalue: 01/01/2024
+timevalue: 14:33:04
+datetimevalue: 2024-01-01T14:33:04
+
+valueset:
+    stringvalue: teststring
+    intvalue: 99
+    boolvalue: false
+    doublevalue: 122.03
+    datevalue: 01/01/2024
+    timevalue: 14:33:04
+    datetimevalue: 2024-01-01T14:33:04
+    
