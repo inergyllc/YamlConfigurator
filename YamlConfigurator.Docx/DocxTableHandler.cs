@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Xceed.Document.NET;
+﻿using Xceed.Document.NET;
 using Xceed.Words.NET;
 
 namespace YamlConfigurator.Docx;

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="configuration">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="packageSources" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="add" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="key" type="xs:string" use="required"/>
+                  <xs:attribute name="value" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="packageSourceCredentials" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="source" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="add" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="key" type="xs:string" use="required"/>
+                        <xs:attribute name="value" type="xs:string" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="apikeys" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="add" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="key" type="xs:string" use="required"/>
+                  <xs:attribute name="value" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="disabledPackageSources" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="add" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="key" type="xs:string" use="required"/>
+                  <xs:attribute name="value" type="xs:boolean" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="activePackageSource" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="add" maxOccurs="1">
+                <xs:complexType>
+                  <xs:attribute name="key" type="xs:string" use="required"/>
+                  <xs:attribute name="value" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="trustedSigners" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="author" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="certificate" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="fingerprint" type="xs:string" use="required"/>
+                        <xs:attribute name="hashAlgorithm" type="xs:string" use="required"/>
+                        <xs:attribute name="allowUntrustedRoot" type="xs:boolean" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="repository" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="certificate" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="fingerprint" type="xs:string" use="required"/>
+                        <xs:attribute name="hashAlgorithm" type="xs:string" use="required"/>
+                        <xs:attribute name="allowUntrustedRoot" type="xs:boolean" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="owners" type="xs:string" minOccurs="0"/>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required"/>
+                  <xs:attribute name="serviceIndex" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="fallbackPackageFolders" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="add" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="key" type="xs:string" use="required"/>
+                  <xs:attribute name="value" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="packageSourceMapping" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="packageSource" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="patterns" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="pattern" type="xs:string" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

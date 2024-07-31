@@ -36,7 +36,8 @@ public static class ConfigurationExtensions
     /// </summary>
     /// <param name="configuration">The IConfiguration instance.</param>
     /// <returns>The list of DOCX document configurations.</returns>
-    public static DocConfiguration[] Docs(this IConfiguration configuration) => configuration.Docx().Docs.ToArray();
+    public static DocConfiguration[] Docs(this IConfiguration configuration) 
+        => [.. configuration.Docx().Docs];
 
     /// <summary>
     /// Returns the document configuration by its name.

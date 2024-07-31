@@ -1,4 +1,5 @@
 ﻿namespace YamlConfigurator.Docx.Models;
+
 /// <summary>
 /// Represents the root configuration for DOCX documents.
 /// </summary>
@@ -14,7 +15,9 @@ public class DocxConfiguration
     /// </summary>
     /// <param name="name">The name of the document.</param>
     /// <returns>The DOCX document configuration with the specified name.</returns>
-    public DocConfiguration GetDocByName(string name) => Docs.FirstOrDefault(doc => doc.Name == name);
+    public DocConfiguration GetDocByName(string name) => 
+        Docs.FirstOrDefault(doc => doc.Name == name)
+        ?? new();
 
     /// <summary>
     /// Returns the DOCX document configuration by its index.

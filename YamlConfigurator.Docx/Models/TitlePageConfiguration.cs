@@ -8,5 +8,5 @@ public class TitlePageConfiguration
     /// <summary>
     /// Gets or sets the title text and style for the title page.
     /// </summary>
-    public StyledTextConfiguraton Title { get; set; } = new();
+    public StyledTextConfiguration Title { get; set; } = new();
 }

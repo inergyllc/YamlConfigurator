@@ -10,9 +10,21 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1054FABC-9BFA-4D42-9F28-AE71AFCC0634}"
 	ProjectSection(SolutionItems) = preProject
 		nuget.config = nuget.config
+		nuget.config.xsd = nuget.config.xsd
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YamlConfigurator.Docx", "YamlConfigurator.Docx\YamlConfigurator.Docx.csproj", "{CBB83337-6069-4673-A508-427941D6BC7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YamlConfigurator.Docx", "YamlConfigurator.Docx\YamlConfigurator.Docx.csproj", "{CBB83337-6069-4673-A508-427941D6BC7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{1A8A6902-ECE7-40ED-AFA2-F7FF610F8C00}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\github PAT 1.png = Resources\github PAT 1.png
+		Resources\github PAT 2.png = Resources\github PAT 2.png
+		Resources\Nuget package manager 1.PNG = Resources\Nuget package manager 1.PNG
+		Resources\Nuget package manager 2.PNG = Resources\Nuget package manager 2.PNG
+		Resources\Nuget package manager 3.PNG = Resources\Nuget package manager 3.PNG
+		Resources\nuget.config.xsd = Resources\nuget.config.xsd
+		Resources\yaml-icon.png = Resources\yaml-icon.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +54,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A8A6902-ECE7-40ED-AFA2-F7FF610F8C00} = {1054FABC-9BFA-4D42-9F28-AE71AFCC0634}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E6E437B-3371-4151-B28D-1136ED68B493}

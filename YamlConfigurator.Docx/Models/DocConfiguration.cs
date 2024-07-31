@@ -30,7 +30,9 @@ public class DocConfiguration
     /// </summary>
     /// <param name="name">The name of the part.</param>
     /// <returns>The part configuration with the specified name.</returns>
-    public PartConfiguration GetPartByName(string name) => Parts.FirstOrDefault(part => part.Name == name);
+    public PartConfiguration GetPartByName(string name) 
+        => Parts.FirstOrDefault(part => part.Name == name) 
+        ?? new();
 
     /// <summary>
     /// Returns the part configuration by its index.

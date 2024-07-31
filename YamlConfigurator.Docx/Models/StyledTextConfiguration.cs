@@ -3,15 +3,15 @@
 /// <summary>
 /// Represents a styled text with a value and a style.
 /// </summary>
-public class StyledText
+public class StyledTextConfiguration
 {
     /// <summary>
-    /// Gets or sets the value of the text.
+    /// Gets or sets the text value.
     /// </summary>
     public string Value { get; set; } = string.Empty;
 
     /// <summary>
-    /// Gets or sets the style used for the text.
+    /// Gets or sets the text style.
     /// </summary>
-    public string Style { get; set; } = "Normal";
+    public string Style { get; set; } = string.Empty;
 }
