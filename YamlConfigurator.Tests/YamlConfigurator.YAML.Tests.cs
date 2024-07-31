@@ -4,6 +4,8 @@ using YamlConfigurator.Docx.Models;
 
 
 namespace YamlConfigurator.Tests;
+
+
 [TestFixture]
 public class YamlConfigurationYAMLTests
 {

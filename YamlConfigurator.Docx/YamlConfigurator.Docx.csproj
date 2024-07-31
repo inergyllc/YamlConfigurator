@@ -63,6 +63,7 @@
     <None Update="LICENSE">
       <PackagePath>\</PackagePath>
       <Pack>True</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="README.md">
       <PackagePath>\</PackagePath>

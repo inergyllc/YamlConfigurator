@@ -1,8 +1,8 @@
 # YamlConfigurator
 Manage and extend YAML configuration settings in .NET applications.
 
-## YamlConfigurator.Files
-YamlConfigurator.Files is a .NET library that facilitates the loading and usage of YAML configuration files in .NET applications. It provides seamless integration with the Microsoft.Extensions.Configuration framework, allowing developers to manage application settings and configurations using YAML files. This library is particularly useful for scenarios where configurations need to be more human-readable and manageable compared to traditional JSON or XML formats.
+## YamlConfigurator.Docx
+YamlConfigurator.Docx is a .NET library that facilitates the loading and usage of YAML configuration files in .NET applications. It provides seamless integration with the Microsoft.Extensions.Configuration framework, allowing developers to manage application settings and configurations using YAML files. This library is particularly useful for scenarios where configurations need to be more human-readable and manageable compared to traditional JSON or XML formats.
 
 ### Features
 - **YAML Configuration Loading:** Load configuration settings from YAML files.
@@ -10,9 +10,9 @@ YamlConfigurator.Files is a .NET library that facilitates the loading and usage 
 - **Combine Multiple Configuration Sources:** Use YAML alongside other configuration sources like JSON.
 - **Flexible Configuration Management:** Easily manage application settings, including logging, file management, and more.
 
-## YamlConfigurator.Files Management
+## YamlConfigurator.Docx Management
 
-### Adding `InergyLLC.YamlConfigurator` to NuGet Package Manager in Visual Studio 2022
+### Adding `YamlConfigurator` to NuGet Package Manager in Visual Studio 2022
 
 #### Step 1: Open Visual Studio 2022
 1. Launch or open your Visual Studio 2022 project.
@@ -43,11 +43,11 @@ YamlConfigurator.Files is a .NET library that facilitates the loading and usage 
 ![Step 6](https://github.com/inergyllc/YamlConfigurator/blob/master/Resources/Nuget%20package%20manager%203.PNG)
 
 #### Step 7: Search for `YamlConfigurator`
-1. In the search box, type `YamlConfigurator.Files`.
+1. In the search box, type `YamlConfigurator.Docx`.
 2. Press Enter to search.
 
 #### Step 8: Install the Package
-1. Select `YamlConfigurator.Files` from the search results.
+1. Select `YamlConfigurator.Docx` from the search results.
 2. Click `Install` to add the package to your project.
 
 ---
@@ -98,7 +98,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration.Yaml;
-using YamlConfigurator.Files;
+using YamlConfigurator.Docx;
 
 namespace YamlConfigurator.Files.Tests
 {
@@ -123,21 +123,8 @@ namespace YamlConfigurator.Files.Tests
             var logger = serviceProvider.GetRequiredService<ILogger<Program>>();
 
             // Get a specific file configuration (example: "results")
-            var filesManagerConfig = configuration.GetFilesManagerConfiguration();
-            var excelFileConfig = filesManagerConfig.GetFileByName("results");
-            var journalFileConfig = filesManagerConfig.GetFileByName("journal");
+            var docxManager = configuration.GetDocxConfiguration();
 
-            // Display the file configuration - INFORMATION LOGGER
-            logger.LogInformation("INFO: File Configuration:");
-            logger.LogInformation("INFO: Name: {value}", excelFileConfig.Name);
-            logger.LogInformation("INFO: Type: {value}", excelFileConfig.Type);
-            logger.LogInformation("INFO: Root: {value}", excelFileConfig.Root);
-            logger.LogInformation("INFO: Extension: {value}", excelFileConfig.Extension);
-            logger.LogInformation("INFO: Folder: {value}", excelFileConfig.Folder);
-            logger.LogInformation("INFO: Timestamp: {value}", excelFileConfig.Timestamp);
-            logger.LogInformation("INFO: Force: {value}", excelFileConfig.Force);
-            logger.LogInformation("INFO: Append: {value}", excelFileConfig.Append);
-            logger.LogInformation("INFO: Full Path: {value}", excelFileConfig.Path);
         }
     }
 }
